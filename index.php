@@ -8,8 +8,8 @@
     <meta name="author" content="TemplateMo">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"
         rel="stylesheet">
-  
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="/assets/images/logo.png" />
@@ -265,9 +265,9 @@
                 </div>
             </div>
             <style>
-                #row-322331367>.col>.col-inner {
-                    padding: 30px 30px 30px 30px;
-                }
+            #row-322331367>.col>.col-inner {
+                padding: 30px 30px 30px 30px;
+            }
             </style>
         </div>
         </div>
@@ -371,8 +371,8 @@
 
                                     <div class="col-lg-12">
                                         <fieldset>
-                                            <input name="address" rows="6" id="address" placeholder="Địa chỉ" required
-                                                style="background-color: rgba(250,250,250,0.3);"></input>
+                                            <input name="address" rows="6" id="address" placeholder="Xã - Huyện"
+                                                required style="background-color: rgba(250,250,250,0.3);"></input>
                                         </fieldset>
                                     </div>
                                     <div class="col-lg-12">
@@ -446,7 +446,8 @@
                         </div>
 
                         <ul class="social">
-                            <li><a href="https://www.facebook.com/profile.php?id=100083351821890"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="https://www.facebook.com/profile.php?id=100083351821890"><i
+                                        class="fa-brands fa-facebook-f"></i></a></li>
                             <li><a href="https://zalo.me/1883585238464712125"><i><img src="assets/images/zalo.png"
                                             width="44px" height="44px" alt="zalo"></i></a></li>
                             <li><a href="https://www.tiktok.com/@biocropsciencesvn?lang=vi-VN"><i
@@ -463,10 +464,11 @@
 
     <!-- nhúng chatbox zalo -->
     <div class="zalo-chat-widget" data-oaid="1883585238464712125" data-welcome-message="Rất vui khi được hỗ trợ bạn!"
-        data-autopopup="0" data-width="" data-height="" style="right: 0; z-index: 2147483644; border: none; visibility: visible; bottom: 52px; position: fixed; width: 60px; height: 60px;">
-    
-    
-    
+        data-autopopup="0" data-width="" data-height=""
+        style="right: 0; z-index: 2147483644; border: none; visibility: visible; bottom: 52px; position: fixed; width: 60px; height: 60px;">
+
+
+
     </div>
     <script src="https://sp.zalo.me/plugins/sdk.js"></script>
 
@@ -487,129 +489,133 @@
     <!-- Global Init -->
     <script src="assets/js/custom.js"></script>
     <script>
-        // Get the modal
-        var modal = document.getElementById("myModal");
+    // Get the modal
+    var modal = document.getElementById("myModal");
 
-        // Get the button that opens the modal
-        var btn = document.getElementById("openModalButton");
+    // Get the button that opens the modal
+    var btn = document.getElementById("openModalButton");
 
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close-button")[0];
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close-button")[0];
 
-        // When the user clicks on the button, open the modal
-        btn.onclick = function () {
-            modal.style.display = "block";
-        }
+    // When the user clicks on the button, open the modal
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
 
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function () {
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
             modal.style.display = "none";
         }
-
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function (event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
+    }
     </script>
 
     <script>
-        $(document).ready(function () {
-            $('#phone').on('blur', function () {
-                var phone = $('#phone').val();
+    $(document).ready(function() {
+        $('#phone').on('blur', function() {
+            var phone = $('#phone').val();
 
-                // Kiểm tra số điện thoại có tồn tại hay không
-                $.ajax({
-                    url: 'check_phone.php',
-                    type: 'POST',
-                    data: { phone: phone },
-                    success: function (response) {
-                        if (response === 'invalid') {
-                            $('#lenghtError').show();
-                        } else {
-                            $('#lenghtError').hide();
-                        }
-                        if (response === 'exists') {
-                            $('#phoneError').show();
-                        } else {
-                            $('#phoneError').hide();
-                        }
-                    },
-                    error: function () {
-                        alert('Số điện thoại đã đăng ký');
+            // Kiểm tra số điện thoại có tồn tại hay không
+            $.ajax({
+                url: 'check_phone.php',
+                type: 'POST',
+                data: {
+                    phone: phone
+                },
+                success: function(response) {
+                    if (response === 'invalid') {
+                        $('#lenghtError').show();
+                    } else {
+                        $('#lenghtError').hide();
                     }
-                });
-            });
-
-            $('#phone2').on('blur', function () {
-                var phone = $('#phone2').val();
-
-                // Kiểm tra số điện thoại có tồn tại hay không
-                $.ajax({
-                    url: 'check_phone.php',
-                    type: 'POST',
-                    data: { phone: phone },
-                    success: function (response) {
-                        if (response === 'invalid') {
-                            $('#lenghtError2').show();
-                        } else {
-                            $('#lenghtError2').hide();
-                        }
-                        if (response === 'exists') {
-                            $('#phoneError2').show();
-                        } else {
-                            $('#phoneError2').hide();
-                        }
-                    },
-                    error: function () {
-                        alert('Số điện thoại đã đăng ký');
+                    if (response === 'exists') {
+                        $('#phoneError').show();
+                    } else {
+                        $('#phoneError').hide();
                     }
-                });
-            });
-
-            $('#addForm').on('submit', function (event) {
-                event.preventDefault();
-                // Gửi dữ liệu để thêm mới
-                $.ajax({
-                    url: 'process_add_data.php',
-                    type: 'POST',
-                    data: $('#addForm').serialize(),
-                    success: function (response) {
-                        $('#message').text(response);
-                        if (response === "1") {
-                            $('#addForm')[0].reset();
-                            alert('Đăng ký thành công');
-                            location.reload();
-                        }
-                    },
-                    error: function () {
-                        alert('Lỗi khi thêm dữ liệu');
-                    }
-                });
-            });
-
-            $('#contactForm').on('submit', function (event) {
-                event.preventDefault();
-                // Gửi dữ liệu để thêm mới
-                $.ajax({
-                    url: 'add_data2.php',
-                    type: 'POST',
-                    data: $('#contactForm').serialize(),
-                    success: function (response) {
-                        $('#message').text(response);
-                        if (response === "1") {
-                            $('#contactForm')[0].reset();
-                            alert('Đăng ký thành công');
-                            location.reload();
-                        }
-                    },
-                    error: function () {
-                        alert('Lỗi khi thêm dữ liệu');
-                    }
-                });
+                },
+                error: function() {
+                    alert('Số điện thoại đã đăng ký');
+                }
             });
         });
+
+        $('#phone2').on('blur', function() {
+            var phone = $('#phone2').val();
+
+            // Kiểm tra số điện thoại có tồn tại hay không
+            $.ajax({
+                url: 'check_phone.php',
+                type: 'POST',
+                data: {
+                    phone: phone
+                },
+                success: function(response) {
+                    if (response === 'invalid') {
+                        $('#lenghtError2').show();
+                    } else {
+                        $('#lenghtError2').hide();
+                    }
+                    if (response === 'exists') {
+                        $('#phoneError2').show();
+                    } else {
+                        $('#phoneError2').hide();
+                    }
+                },
+                error: function() {
+                    alert('Số điện thoại đã đăng ký');
+                }
+            });
+        });
+
+        $('#addForm').on('submit', function(event) {
+            event.preventDefault();
+            // Gửi dữ liệu để thêm mới
+            $.ajax({
+                url: 'process_add_data.php',
+                type: 'POST',
+                data: $('#addForm').serialize(),
+                success: function(response) {
+                    $('#message').text(response);
+                    if (response === "1") {
+                        $('#addForm')[0].reset();
+                        alert('Đăng ký thành công');
+                        location.reload();
+                    }
+                },
+                error: function() {
+                    alert('Lỗi khi thêm dữ liệu');
+                }
+            });
+        });
+
+        $('#contactForm').on('submit', function(event) {
+            event.preventDefault();
+            // Gửi dữ liệu để thêm mới
+            $.ajax({
+                url: 'add_data2.php',
+                type: 'POST',
+                data: $('#contactForm').serialize(),
+                success: function(response) {
+                    $('#message').text(response);
+                    if (response === "1") {
+                        $('#contactForm')[0].reset();
+                        alert('Đăng ký thành công');
+                        location.reload();
+                    }
+                },
+                error: function() {
+                    alert('Lỗi khi thêm dữ liệu');
+                }
+            });
+        });
+    });
     </script>
 
 
