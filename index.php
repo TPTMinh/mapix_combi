@@ -8,9 +8,9 @@
     <meta name="author" content="TemplateMo">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-        crossorigin="anonymous" />
+  
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="/assets/images/logo.png" />
     <title>BIOCROPSCIENCES VIỆT NAM</title>
@@ -446,8 +446,7 @@
                         </div>
 
                         <ul class="social">
-                            <li><a href="https://www.facebook.com/profile.php?id=100083351821890"><i
-                                        class="fa fa-facebook"></i></a></li>
+                            <li><a href="https://www.facebook.com/profile.php?id=100083351821890"><i class="fa-brands fa-facebook-f"></i></a></li>
                             <li><a href="https://zalo.me/1883585238464712125"><i><img src="assets/images/zalo.png"
                                             width="44px" height="44px" alt="zalo"></i></a></li>
                             <li><a href="https://www.tiktok.com/@biocropsciencesvn?lang=vi-VN"><i
@@ -464,7 +463,11 @@
 
     <!-- nhúng chatbox zalo -->
     <div class="zalo-chat-widget" data-oaid="1883585238464712125" data-welcome-message="Rất vui khi được hỗ trợ bạn!"
-        data-autopopup="0" data-width="" data-height=""></div>
+        data-autopopup="0" data-width="" data-height="" style="right: 0; z-index: 2147483644; border: none; visibility: visible; bottom: 52px; position: fixed; width: 60px; height: 60px;">
+    
+    
+    
+    </div>
     <script src="https://sp.zalo.me/plugins/sdk.js"></script>
 
     <!-- jQuery -->
