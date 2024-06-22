@@ -1,11 +1,3 @@
-/*
-
-Lava Landing Page
-
-https://templatemo.com/tm-540-lava-landing-page
-
-*/
-
 /* ---------------------------------------------
 Table of contents
 ------------------------------------------------
@@ -433,10 +425,9 @@ header
 
 .header-area .main-nav .nav li a {
   display: block;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 20px;
-  font-style: bold;
-  color: #7a7a7a;
+  color: #000000;
   text-transform: uppercase;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
@@ -800,7 +791,6 @@ welcome
 .welcome-area .header-text h1 em {
   font-style: normal;
   color: #098f43;
-  /* background: linear-gradient(to right, #098f43, #7ac299); */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -1089,8 +1079,6 @@ Hidden form start*/
 .main-background {
   width: 100%;
   height: 100%;
-  /* background: #098f43; */
-  /* background: linear-gradient(145deg, rgb(71 244 63) 0%, #155724 100%); */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1146,9 +1134,6 @@ Hidden form start*/
   text-align: center;
 }
 #openModalButton {
-  /* padding: 10px 20px;
-  font-size: 14px;
-   */
   padding: 10px 20px;
   font-size: 1em;
   border: none;
@@ -1241,7 +1226,6 @@ form textarea {
 form button {
   padding: 10px 20px;
   background: #098f43;
-  /* background: linear-gradient(145deg, rgb(71 244 63) 0%, #155724 100%); */
   color: white;
   border: none;
   border-radius: 20px;

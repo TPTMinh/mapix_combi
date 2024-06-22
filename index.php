@@ -68,7 +68,7 @@
                     <div class="left-text col-lg-6 col-md-12 col-sm-12 col-xs-12"
                         data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
                         <h3>GIẢI PHÁP KIẾN TẠO NĂNG SUẤT XANH</h3>
-                        <h1>MAPIX 40SL</br>COMBIPLUS.A</h1>
+                        <h1>MAPIX 40SL</br><span style="color: #098f43;">COMBIPLUS.A</span></h1>
                         <p style="font-size:20px;">KÍCH RỄ NHIỀU LÔNG - CHỒI TO THÂN CỨNG</p>
                         <a href="#contact-us" class="main-button-slider">LIÊN HỆ NGAY</a>
                     </div>
@@ -169,33 +169,7 @@
                                 </p>
                             </div>
                         </li>
-                        <!-- <li data-scroll-reveal="enter right move 30px over 0.6s after 0.5s">
-                            <img src="assets/images/dhst.png" width="100px" height="100px" alt=""
-                                style="border: solid #7cc08a;">
-                            <div class="text">
-                                <h4>Điều hòa sinh trưởng</h4>
-                                <p>
-                                    Việc kết hợp sử dụng MAPIX 40LS và COMBIPLUS.A trong quy trình canh tác lúa không
-                                    chỉ giúp điều
-                                    hòa sinh trưởng mà còn kiến tạo năng suất xanh và chất lượng sản phẩm. Bằng cách áp dụng
-                                    đúng liều lượng và thời điểm sử dụng, người nông dân có thể tận dụng tối đa hiệu quả
-                                    của hai loại thuốc này, đảm bảo mùa màng bội thu và sản phẩm lúa đạt chất lượng cao.
-                                </p>
-                            </div>
-                        </li> -->
-                        <!-- <li data-scroll-reveal="enter right move 30px over 0.6s after 0.6s">
-                            <img src="assets/images/gdc.png" width="100px" height="100px" alt=""
-                                style="border: solid #7cc08a;">
-                            <div class="text">
-                                <h4>Giải độc cho cây</h4>
-                                <p>Giải độc cho cây lúa là một biện pháp hiệu quả nhằm phục hồi sức khỏe và màu xanh của
-                                    lá lúa. CombiPlus.A chứa các chất vi lượng và chất kích thích sinh trưởng, giúp cải
-                                    thiện sự phát triển của cây trồng và giải quyết các vấn đề liên quan đến dinh dưỡng
-                                    và nhiễm độc. Việc áp dụng đúng liều lượng và thời điểm sẽ giúp lá lúa dần phục hồi
-                                    màu xanh, tăng cường sức đề kháng và khả năng chống chịu với các điều kiện bất lợi.
-                                </p>
-                            </div>
-                        </li> -->
+
                     </ul>
                 </div>
             </div>
